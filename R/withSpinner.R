@@ -100,7 +100,7 @@ withSpinner <- function(ui_element,type=getOption("spinner.type",default=1),colo
     # get default font-size from css, and cut it by 25%, as for outputs we usually need something smaller
     size <- round(c(11,11,10,20,25,90,10,10)[type] * size * 0.75)
     css_size <- add_style(
-      glue::glue("#{id} {{font-size: {size}px}}",id,size)
+      glue::glue("#{id} {{font-size: {size}px}}")
     )
   }
   
